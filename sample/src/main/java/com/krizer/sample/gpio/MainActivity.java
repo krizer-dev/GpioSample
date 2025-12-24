@@ -69,10 +69,6 @@ public class MainActivity extends AppCompatActivity {
             binding.etName.setText(GpioEnum.MS68.C3.getName());
             binding.etAddress.setText(GpioEnum.MS68.C3.getAddress());
             onCreateBtnClicked();
-
-            binding.etName.setText(GpioEnum.MS68.C4.getName());
-            binding.etAddress.setText(GpioEnum.MS68.C4.getAddress());
-            onCreateBtnClicked();
         });
 
         binding.btnPresetS38.setOnClickListener(v -> {
