@@ -11,7 +11,17 @@
 - GPIO READ / WRITE
 
 ## 🛠 MANUAL
+### GPIO 제어 생성
+1. 생성
 
+
+2. 생성 (프리셋)
+
+
+### GPIO 제어
+
+
+## krz_gpio library
 ### INIT GpioController
 ```
 GpioController gpioController = GpioController.getInstance(this);
