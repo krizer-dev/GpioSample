@@ -25,6 +25,7 @@
 ![Image](https://github.com/user-attachments/assets/f315639a-8273-42a1-876d-5fecfd5a2f12)
 
 ## 단순 제어
+### WRITE GPIO
 ```
 Intent intent = new Intent("com.itemp.intent.set_gpio_status");
 intent.putExtra("gpioName", gpioName);
@@ -45,6 +46,10 @@ context.sendBroadcast(intent);
 
 **Direction IN** - 2
 
+### READ GPIO
+```
+cat /d/gpio
+```
 
 ## krz_gpio library
 ### INIT GpioController
