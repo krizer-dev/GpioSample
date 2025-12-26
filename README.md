@@ -33,12 +33,16 @@ context.sendBroadcast(intent);
 ```
 ### gpioName
 **S38** - gpio_a0, gpio_a1, gpio_a2
+
 **S58** - gpio_c2, gpio_c3, gpio_c4
+
 **MS68** - gpio_c2, gpio_c3
 
 ### value
 **Direction OUT** / **LOW** - 0
+
 **Direction OUT** / **HIGH**- 1
+
 **Direction IN** - 2
 
 
