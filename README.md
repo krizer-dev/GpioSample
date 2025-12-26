@@ -24,6 +24,24 @@
 
 ![Image](https://github.com/user-attachments/assets/f315639a-8273-42a1-876d-5fecfd5a2f12)
 
+## 단순 제어
+```
+Intent intent = new Intent("com.itemp.intent.set_gpio_status");
+intent.putExtra("gpioName", gpioName);
+Intent.putExtra("value", value);
+context.sendBroadcast(intent);
+```
+### gpioName
+**S38** - gpio_a0, gpio_a1, gpio_a2
+**S58** - gpio_c2, gpio_c3, gpio_c4
+**MS68** - gpio_c2, gpio_c3
+
+### value
+**Direction OUT** / **LOW** - 0
+**Direction OUT** / **HIGH**- 1
+**Direction IN** - 2
+
+
 ## krz_gpio library
 ### INIT GpioController
 ```
@@ -58,10 +76,10 @@ gpio.setDirection(Gpio.DIRECTION_OUT);
 gpio.setActive(Gpio.ACTIVE_LOW);
 gpioController.writeOnce(gpio);
 ```
-### Preset
+### GpioEnum
 
-**GpioEnum.MS68** - M1010T, M1560T
+**MS68** - M1010T, M1560T
 
-**GpioEnum.S38** - RT4X, A1010T, A1560T, A2150T, A2400T, A3200T
+**S38** - RT4X, A1010T, A1560T, A2150T, A2400T, A3200T
 
-**GpioEnum.S58** - RT5X, M2150T, M2400T, M3200T
+**S58** - RT5X, M2150T, M2400T, M3200T
