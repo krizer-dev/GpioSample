@@ -60,8 +60,8 @@ gpioController.writeOnce(gpio);
 ```
 ### Preset
 
-GpioEnum.MS68 - M1010T, M1560T
+**GpioEnum.MS68** - M1010T, M1560T
 
-GpioEnum.S38 - RT4X, A1010T, A1560T, A2150T, A2400T, A3200T
+**GpioEnum.S38** - RT4X, A1010T, A1560T, A2150T, A2400T, A3200T
 
-GpioEnum.S58 - RT5X, M2150T, M2400T, M3200T
+**GpioEnum.S58** - RT5X, M2150T, M2400T, M3200T
