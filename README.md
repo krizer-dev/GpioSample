@@ -49,9 +49,11 @@ context.sendBroadcast(intent);
 ### READ GPIO
 ```
 cat /d/gpio
+```
 
 or
 
+```
 cat /sys/class/mynode_class/mynode_device/gpiovalue
 ```
 
